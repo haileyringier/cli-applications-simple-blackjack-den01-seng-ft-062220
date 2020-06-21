@@ -54,11 +54,16 @@ end
 #####################################################
 
 def runner
- card_total = 0
-  welcome 
- card_total = initial_round
-  hit?(card_total)
-  display_card_total(card_total)
+ players_hand = 0
+ welcome 
+ players_hand = initial_round
+ prompt_user
+ get_user_input
+  if get_user_input == 's'
+   prompt_user
+  end
+  hit?(players_hand)
+  display_card_total(players_hand)
   until card_total > 21 do
     hit?(card_total)
     display_card_total
