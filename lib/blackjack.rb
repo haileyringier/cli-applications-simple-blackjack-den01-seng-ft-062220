@@ -57,16 +57,9 @@ def runner
  players_hand = 0
  welcome 
  players_hand = initial_round
- prompt_user
- get_user_input
-  if get_user_input == 's'
-   prompt_user
-  end
-  hit?(players_hand)
-  display_card_total(players_hand)
-  until card_total > 21 do
-    hit?(card_total)
-    display_card_total
+  until players_hand > 21 do
+    hit?(players_hand)
+    display_card_total(players_hand)
   end
   return end_game
 end
