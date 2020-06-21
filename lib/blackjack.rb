@@ -1,4 +1,4 @@
-def welcome
+def welcome ("Welcome to the Blackjack Table")
   puts "Welcome to the Blackjack Table"
 end
 
