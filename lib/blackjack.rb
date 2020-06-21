@@ -60,12 +60,10 @@ def runner
   
   until card_total > 21  
     hit?
-  if card_total > 21 
-  end_game
   
   
-  
-  
+  return end_game
+  end
   
 end
     
