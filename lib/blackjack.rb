@@ -1,4 +1,4 @@
-def welcome ("Welcome to the Blackjack Table")
+def welcome (message)
   puts "Welcome to the Blackjack Table"
 end
 
