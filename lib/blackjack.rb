@@ -37,7 +37,7 @@ def hit? (card_total)
     new_card = deal_card
     card_total = card_total + new_card
   end
-  if player_answer != 'h' && player_answer != 's'
+  elsif player_answer != 'h' && player_answer != 's'
     invalid_command
     prompt_user
     get_user_input
@@ -54,6 +54,6 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  
 end
     
