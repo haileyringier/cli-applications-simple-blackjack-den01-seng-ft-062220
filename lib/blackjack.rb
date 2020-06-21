@@ -37,7 +37,7 @@ def hit? (card_total)
     new_card = deal_card
     card_total = card_total + new_card
   end
-  if player_answer != "h" | "s"
+  if player_answer != "h" || "s"
     invalid_command
     prompt_user
   end
