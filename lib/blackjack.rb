@@ -32,7 +32,6 @@ end
 
 def hit? (card_total)
   prompt_user
-  loop do
     player_answer = get_user_input
   if player_answer == "h"
     new_card = deal_card
@@ -42,7 +41,6 @@ def hit? (card_total)
     invalid_command
     prompt_user
   end
- end
   return card_total
 end
 
