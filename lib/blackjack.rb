@@ -31,7 +31,12 @@ def initial_round
 end
 
 def hit? (card_total)
-  # code hit? here
+  prompt_user
+ player_answer = get_user_input
+  if player_answer == "h"
+    new_card = deal_card
+    card_total = card_total + new_card
+    
 end
 
 def invalid_command
