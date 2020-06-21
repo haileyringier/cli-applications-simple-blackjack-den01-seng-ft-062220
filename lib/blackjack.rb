@@ -57,6 +57,7 @@ def runner
   prompt_user
   initial_round
   hit?
+  
   if stay 
     hit?
   if card_total > 21 
